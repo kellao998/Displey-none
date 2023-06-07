@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .minhaDiv{
+        background-color: #06aa48;
+         align-items: center;
+         display: flex;
+         width: 100vw solid;
+         height: 70px;
+         border-bottom: solid #1fb35b 1px;
+         padding-left: 100px;
+         padding-right: 100px;
+        
+        }
+        .segundaDiv{
+            visibility: hidden;
+        background-color: #e62929;
+         align-items: center;
+         display: flex;
+         width: 100vw solid;
+         height: 70px;
+         border-bottom: solid #424cda 1px;
+         padding-left: 100px;
+         padding-right: 100px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div id="div1" class="minhaDiv" onclick="abreMsg()">
+        
+    </div>
+
+    <div id= "div2" class="segundaDiv" onclick="visivel()">
+        
+    
+    </div>
+    <div id="div1" >
+
+    </div>
+    <script>
+            function abreMsg(){
+                document.getElementById("div1").style.visibility="hidden";
+                document.getElementById("div2").style.visibility="visible";
+
+
+            }
+            function visivel(){
+                document.getElementById("div2").style.visibility="hidden";
+                document.getElementById("div1").style.visibility="visible";
+            }
+
+                
+            
+    </script>
+    
+</body>
+</html>
